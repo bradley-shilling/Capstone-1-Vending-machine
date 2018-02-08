@@ -25,7 +25,7 @@ public class Menu {
 		return choice;
 	}
 
-	public BigDecimal getAmountFromUserInput() {
+	public BigDecimal getAmountFromUserInput() { // check for valid input from consumer
 		for(;;){
 			out.println();
 			out.print("Please enter an amount >>>");
