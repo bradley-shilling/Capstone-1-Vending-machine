@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Stack;
@@ -19,7 +20,7 @@ public class inventoryReader  {
 		 * logic
 		 */
 		//create map array
-		Map<String, Stack<Items>> inventory = new HashMap<>();
+		Map<String, Stack<Items>> inventory = new LinkedHashMap<>();
 		
 		
 		//run through file
