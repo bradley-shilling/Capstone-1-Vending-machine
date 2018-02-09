@@ -19,7 +19,7 @@ public class LogWriter {
 		
 		// add date format
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss a");
-		Date date = new Date();
+		String date = new Date().toString();
 		
 		
 		
@@ -36,7 +36,8 @@ public class LogWriter {
 //										String currentLine = fileReader.nextLine(); // get existing line from file
 //										writer.println(currentLine); // write line back to file to new file
 //								}
-							writer.println(date.toString() + "     |     " + input);
+							writer.printf("%-40s%-120s%n", date, input);
+							
 					}
 				}	
 	}	

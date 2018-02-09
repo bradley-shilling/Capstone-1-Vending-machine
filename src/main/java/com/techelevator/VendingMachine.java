@@ -21,6 +21,11 @@ public class VendingMachine {
 	// new file writer method
 	LogWriter log = new LogWriter();
 
+	
+	
+	
+	
+	
 	// constructor
 	public VendingMachine() throws FileNotFoundException {
 		inventoryReader x = new inventoryReader(); // make new inventory reader
@@ -28,35 +33,60 @@ public class VendingMachine {
 
 	}
 
-	// methods
+	
+	
+	
+	
+	
+	
+	/*
+	 * Methods
+	 */
 
 	// deposit
 	public void deposit(BigDecimal ammount) throws FileNotFoundException {
 		balance = balance.add(ammount);// add amount to current balance
 		// log action
-		log.writeToFile("FEED MONEY:     $"+ ammount + "    $" + balance);// log action
+		String out = String.format("%-40s%-10s%-10s", "FEED MONEY:", "$"+ammount , "$" + balance); // format for log
+		log.writeToFile(out);// log action
 		System.out.println("The current balance is " + "$" + balance.toString());
 	}
 
+	
+	
+	
+	
+	
+	
+	
 	// select product
 	public void selectProduct() throws FileNotFoundException {
 		// User Interactions
 		System.out.print("Whaddya Buyin'?: ");
 		String selectedProduct = input.nextLine();
 		// logic
-		if (this.getInventory().containsKey(selectedProduct) && this.balance.compareTo(this.getInventory().get(selectedProduct).peek().getPrice()) >= 0) { // do if key is valid and balance is more than price																								
-			dispence(selectedProduct);
+		if (this.getInventory().containsKey(selectedProduct) && this.getInventory().get(selectedProduct).size() >=1 && this.balance.compareTo(this.getInventory().get(selectedProduct).peek().getPrice()) >= 0) { // do if key is valid and balance is more than price																								
 			System.out.println("Dispensing " + this.getInventory().get(selectedProduct).peek().getName() + ".");
+			System.out.println();
 			//log action
-			log.writeToFile(this.getInventory().get(selectedProduct).peek().getName() + "  " + selectedProduct + "    -$" + this.getInventory().get(selectedProduct).peek().getPrice() + "    $"+ balance);// log action
-		} else if (this.getInventory().containsKey(selectedProduct)) {
+			String out = String.format("%-39s%-11s%-10s", this.getInventory().get(selectedProduct).peek().getName() + " @ " + selectedProduct , "-$" + this.getInventory().get(selectedProduct).peek().getPrice() , "$" + balance); // format for log
+			log.writeToFile(out);// log action
+			dispence(selectedProduct);
+		} else if (this.getInventory().containsKey(selectedProduct) && this.getInventory().get(selectedProduct).size() >=1) {
 			System.out.println("Not Enough Cash, Stranger.");
+		} else if(this.getInventory().containsKey(selectedProduct)) {
+			System.out.println("Sold Out.");
 		} else {
 			System.out.println("Invalid Selection");
 		}
 
 	}
 
+	
+	
+	
+	
+	
 	// dispense
 	public String dispence(String slot) {
 		// check if enough items are in stack
@@ -68,31 +98,44 @@ public class VendingMachine {
 			itemBin.add(this.getInventory().get(slot).pop());
 			// reduce balance
 			balance = balance.subtract(returnPriceForKey(slot));
-			System.out.println(balance + "Left");
+			System.out.println("$" + balance + " remaining balance.");
 
 		}
 
 		return null;
 	}
 	
+	
+	
+	
+	
+	
 	// Finalize method
 	public void finalize() throws FileNotFoundException {
 		// make change
 	Change change = new Change();
+	System.out.println();
 	System.out.println(change.makeChange(this.balance));
+	System.out.println();
 	
 	// set balance to 0
 	BigDecimal startingBal = balance;
 	balance = new BigDecimal("0.00");
 	// log action
-	log.writeToFile("GIVE CHANGE:     $"+ startingBal + "    $" + balance);// log action
+	String out = String.format("%-40s%-10s%-10s", "GIVE CHANGE:", "$"+startingBal , "$" + balance); // format for log
+	log.writeToFile(out);// log action
 	
 	// display message for all items in customeyr bin
 		for (Items item : itemBin ) {
 			System.out.println(item.getMessage());
 		}
+		System.out.println();
 	}
 
+	
+	
+	
+	
 	
 	
 	
@@ -105,6 +148,10 @@ public class VendingMachine {
 		}
 	}
 
+	
+	
+	
+	
 	// return formatted string
 	public String returnFormattedInventoryForKey(String x) {
 		if (!this.getInventory().get(x).isEmpty()) {
@@ -143,6 +190,11 @@ public class VendingMachine {
 	// System.out.println(this.getInventory().get("A1").size()); // print items left
 	// at A1
 
+	
+	
+	
+	
+	
 	// get current inventory
 	public String printInventory() {
 		System.out.println();
@@ -160,12 +212,6 @@ public class VendingMachine {
 		System.out.println("------------------------------------------------------------------");
 		System.out.println();
 		return "Done";
-	}
-
-	// finish
-	public void finish() {
-
-		return;
 	}
 
 	@SuppressWarnings("unchecked")
