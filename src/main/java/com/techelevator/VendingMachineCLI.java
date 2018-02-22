@@ -47,32 +47,23 @@ public class VendingMachineCLI {
 	public void run() throws FileNotFoundException {
 		VendingMachine vm = new VendingMachine();
 
-		// BigDecimal price = vm.getInventory().get("A1").peek().getPrice(); // get
-		// price at A1
-		// System.out.println(vm.getInventory().get("A1").peek().getPrice()); // print
-		// price at A1
+		// BigDecimal price = vm.getInventory().get("A1").peek().getPrice(); // get price at A1
+		// System.out.println(vm.getInventory().get("A1").peek().getPrice()); // print price at A1
 		//
 		// String name = vm.getInventory().get("A1").peek().getName(); // get name at A1
-		// System.out.println(vm.getInventory().get("A1").peek().getName()); // print
-		// name at A1
+		// System.out.println(vm.getInventory().get("A1").peek().getName()); // print name at A1
 		//
-		// String message = vm.getInventory().get("A1").peek().getMessage(); // get
-		// message at A1
-		// System.out.println(vm.getInventory().get("A1").peek().getMessage()); // print
-		// message at A1
+		// String message = vm.getInventory().get("A1").peek().getMessage(); // get message at A1
+		// System.out.println(vm.getInventory().get("A1").peek().getMessage()); // print message at A1
 		//
 		// int invetory = vm.getInventory().get("A1").size(); // get items left at A1
-		// System.out.println(vm.getInventory().get("A1").size()); // print items left
-		// at A1
+		// System.out.println(vm.getInventory().get("A1").size()); // print items left at A1
 		//
-		// boolean empty = vm.getInventory().get("A1").isEmpty(); // check if A1 is
-		// empty
-		// System.out.println(vm.getInventory().get("A1").isEmpty()); // print if A1 is
-		// empty
+		// boolean empty = vm.getInventory().get("A1").isEmpty(); // check if A1 is empty
+		// System.out.println(vm.getInventory().get("A1").isEmpty()); // print if A1 is empty
 		//
 		// vm.getInventory().get("A1").pop(); //remove item from location A1
-		// System.out.println(vm.getInventory().get("A1").size()); // print items left
-		// at A1
+		// System.out.println(vm.getInventory().get("A1").size()); // print items left at A1
 
 		while (true) {
 

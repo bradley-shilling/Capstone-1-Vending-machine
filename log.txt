@@ -5,3 +5,21 @@ Fri Feb 09 15:43:20 EST 2018            FEED MONEY:                             
 Fri Feb 09 15:43:25 EST 2018            Cloud Popcorn @ A4                     -$3.65     $18.00                                                                
 Fri Feb 09 15:43:31 EST 2018            Triplemint @ D4                        -$0.75     $14.35                                                                
 Fri Feb 09 15:43:33 EST 2018            GIVE CHANGE:                            $13.60    $0.00                                                                 
+Fri Feb 09 23:08:16 EST 2018            GIVE CHANGE:                            $0.00     $0.00                                                                 
+Fri Feb 09 23:09:35 EST 2018            FEED MONEY:                             $10.00    $10.00                                                                
+Fri Feb 09 23:09:59 EST 2018            Cowtales @ B2                          -$1.50     $10.00                                                                
+Fri Feb 09 23:10:22 EST 2018            Cloud Popcorn @ A4                     -$3.65     $8.50                                                                 
+Fri Feb 09 23:10:32 EST 2018            Stackers @ A2                          -$1.75     $4.85                                                                 
+Fri Feb 09 23:10:35 EST 2018            GIVE CHANGE:                            $3.10     $0.00                                                                 
+Fri Feb 09 23:20:38 EST 2018            FEED MONEY:                             $10.00    $10.00                                                                
+Fri Feb 09 23:20:50 EST 2018            Triplemint @ D4                        -$0.75     $10.00                                                                
+Fri Feb 09 23:21:04 EST 2018            Triplemint @ D4                        -$0.75     $9.25                                                                 
+Fri Feb 09 23:21:09 EST 2018            Triplemint @ D4                        -$0.75     $8.50                                                                 
+Fri Feb 09 23:21:14 EST 2018            Triplemint @ D4                        -$0.75     $7.75                                                                 
+Fri Feb 09 23:21:17 EST 2018            Triplemint @ D4                        -$0.75     $7.00                                                                 
+Fri Feb 09 23:21:41 EST 2018            Stackers @ A2                          -$1.75     $7.00                                                                 
+Fri Feb 09 23:21:47 EST 2018            Mountain Melter @ C3                   -$1.50     $5.25                                                                 
+Fri Feb 09 23:21:50 EST 2018            Heavy @ C4                             -$1.50     $3.75                                                                 
+Fri Feb 09 23:21:56 EST 2018            Little League Chew @ D2                -$0.95     $2.25                                                                 
+Fri Feb 09 23:22:02 EST 2018            Chiclets @ D3                          -$0.75     $1.30                                                                 
+Fri Feb 09 23:22:36 EST 2018            GIVE CHANGE:                            $0.55     $0.00                                                                 
