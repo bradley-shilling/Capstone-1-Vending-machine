@@ -29,6 +29,13 @@ public class LogWriter {
 					    true /* append = true */))
 						) {
 					
+					// scan source
+//					try (Scanner fileReader = new Scanner(inputFile); // read in source
+//							) {// loop write to new files
+//								while (fileReader.hasNextLine()) {
+//										String currentLine = fileReader.nextLine(); // get existing line from file
+//										writer.println(currentLine); // write line back to file to new file
+//								}
 							writer.printf("%-40s%-120s%n", date, input);
 							
 					}
