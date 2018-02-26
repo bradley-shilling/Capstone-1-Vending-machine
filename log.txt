@@ -5,3 +5,4 @@ Fri Feb 09 15:43:20 EST 2018            FEED MONEY:                             
 Fri Feb 09 15:43:25 EST 2018            Cloud Popcorn @ A4                     -$3.65     $18.00                                                                
 Fri Feb 09 15:43:31 EST 2018            Triplemint @ D4                        -$0.75     $14.35                                                                
 Fri Feb 09 15:43:33 EST 2018            GIVE CHANGE:                            $13.60    $0.00                                                                 
+Mon Feb 26 09:01:00 EST 2018            FEED MONEY:                             $10.00    $10.00                                                                
